@@ -6,7 +6,6 @@
 OVERVIEW & PURPOSE
 - 
 A visualization of restaurants and hotels within the metropolitan area of Denver, Colorado.
-
   
 Instructions on how to use and interact with the project
 -
