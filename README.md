@@ -14,11 +14,6 @@ We've got our data read in from the Yelp API, and then Kris stored that data in 
 
 
 At least one paragraph summarizing efforts for ethical considerations made in the project
--
-(insert text here)
-
-
-Ethical Considerations
 - 
 Whether or not we display cannabis/marijuana businesses in our searches.
 
