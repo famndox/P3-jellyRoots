@@ -19,8 +19,8 @@ Whether or not we show marijuana stores in our searches or not
   
 References for the data source(s)
 -
-
+(insert text here)
   
 References for any code used that is not your own
 -
-
+(insert text here)
