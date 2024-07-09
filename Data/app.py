@@ -41,7 +41,7 @@ def get_restaurants():
 # Home route
 @app.route('/')
 def index():
-    return ()
+    return render_template('index.html')
 
 def run_app():
     app.run(debug=True, use_reloader=False, port=5001)
