@@ -91,6 +91,9 @@ def main():
     # Fetch and insert restaurant data
     restaurant_data = fetch_yelp_data('restaurants', 'Denver, CO')
     insert_data(conn, 'restaurants', restaurant_data)
+
+    disp_data = fetch_yelp_data('dispensary', 'Denver, CO')
+    insert_data(conn, 'dispensaries', disp_data)
     
     conn.close()
 
