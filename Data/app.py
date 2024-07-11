@@ -1,5 +1,5 @@
 import threading
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, send_from_directory
 import psycopg2
 import os
 
@@ -41,7 +41,15 @@ def get_restaurants():
 # Home route
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_from_directory('./build', 'index.html')
+
+@app.route('/static/logic.js')
+def send_static_js():
+    return send_from_directory('./build/static', 'logic.js')
+
+@app.route('/static/style.css')
+def send_static_css():
+    return send_from_directory('./build/static', 'style.css')
 
 def run_app():
     app.run(debug=True, use_reloader=False, port=5001)

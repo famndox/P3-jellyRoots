@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #map,
+  body,
+  html {
+    height: 100%;
+  }
+  
+  
+  ul {
+    color: rgb(211, 20, 20);
+  }
+
+  .map-container {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* full viewport height */
+    width: 100vw; /* full viewport width */
+  }
+  
+  #map {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
