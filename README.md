@@ -1,4 +1,4 @@
-![Header Image](Images/p3jr.png "Title Tile")
+![Header Image](Images/denver.png "Title Tile")
 =============================
 
 ...but a taste of what's to come...
