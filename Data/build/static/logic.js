@@ -1,7 +1,7 @@
 // Modularity is King //
 var restaurantsPath = "http://127.0.0.1:5001/restaurants";
-var greenPath = "http://127.0.0.1:5001/hotels";
-var hotelsPath = "http://127.0.0.1:5001/green";
+var greenPath = "http://127.0.0.1:5001/green";
+var hotelsPath = "http://127.0.0.1:5001/hotels";
 
 // Create an array to hold the layer groups
 let layerGroups = [];
@@ -39,7 +39,7 @@ function createMap(layerGroups) {
     "The Earth": myTile
   }, {
     "Restaurants": layerGroups[0],
-    "Green": layerGroups[1],
+    "Dispensaries": layerGroups[1],
     "Hotels": layerGroups[2]
   }, {
     collapsed: false
@@ -78,7 +78,7 @@ function createMarkers(response, layerName) {
     // For each place, create a marker, and bind a popup with the place's location.
     let place_marker;
     if (layerName === "Hotels") {
-      place_marker = L.marker([lat, long], markerOptions)
+      place_marker = L.marker([lat, long])
         .bindPopup("<h3>" + place_name + "</h3><br>" + "Rating:" + rating );
     } else {
       place_marker = L.circleMarker([lat, long], markerOptions)
