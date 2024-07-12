@@ -3,6 +3,11 @@
 
 ...but a taste of what's to come...
 
+You'll need to install psycopg like any other Python
+package, using ``pip`` to download it from PyPI_::
+
+    $ pip install psycopg2
+
 OVERVIEW & PURPOSE
 - 
 A visualization of restaurants and hotels within the metropolitan area of Denver, Colorado.
