@@ -42,6 +42,7 @@ Here’s how you can implement the toggle feature for cannabis businesses:
 -- 
 Flask Route
 --> app/routes.py
+
 HTML and JavaScript
 --> templates/index.html
 --> static/js/logic.js
