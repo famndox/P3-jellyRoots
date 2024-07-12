@@ -37,6 +37,23 @@ Implementation
 To address these ethical considerations, we have implemented a feature that allows users to filter out cannabis/marijuana businesses from the search results. This ensures that users have the choice and flexibility to view the information that is most relevant and appropriate for them.
 
 
+Code Adjustments
+Here’s how you can implement the toggle feature for cannabis businesses:
+-- 
+Flask Route
+--> app/routes.py
+HTML and JavaScript
+--> templates/index.html
+--> static/js/logic.js
+
+This implementation provides a way for users to toggle the visibility of cannabis businesses on the map, giving them control over their experience while ensuring ethical considerations are met.
+
+
+
+
+
+
+
   
 References for the data source(s)
 -
