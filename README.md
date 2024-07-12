@@ -71,3 +71,54 @@ References for any code used that is not your own
 -
 (insert text here)
 
+
+**__1. Project Initialization__**
+Create a New Repository:
+Create a new repository on GitHub named denver-viz.
+Clone the repository to your local machine.
+Set Up Project Directory:
+Create a directory structure for the project:
+
+**__2. Data Retrieval and Storage__**
+Retrieve Data from Yelp API:
+Use the Yelp API to fetch data for restaurants and hotels in the Denver metropolitan area.
+Set Up SQL Database:
+Create an SQL database to store the data retrieved from the Yelp API.
+Define models for restaurants, hotels, and cannabis businesses using SQLAlchemy.
+
+**__3. Flask Application Development__**
+Initialize Flask Application:
+Set up a Flask app in app/__init__.py.
+Configure the Flask app in config.py.
+Define routes for the web application in app/routes.py.
+Create database models in app/models.py.
+Populate the Database:
+Write a script to populate the database with data from the Yelp API.
+
+**__4. Frontend Development__**
+Create HTML Template:
+Design an HTML template (index.html) to display the map and controls.
+Add CSS for Styling:
+Write CSS to style the map and controls in static/css/style.css.
+Implement JavaScript with Leaflet:
+Write JavaScript to initialize the map, add markers, and implement layer controls in static/js/logic.js.
+
+**__5. Integrate Frontend with Backend__**
+Render Data on the Map:
+Use Flask to pass data from the database to the frontend.
+Render the map with markers for restaurants, hotels, and optionally cannabis businesses.
+
+**__6. Implement User Interactions__**
+Add Controls for Filtering Data:
+Implement controls to toggle the visibility of cannabis businesses on the map.
+Update the map based on user interactions.
+
+**__7. Testing and Deployment__**
+Test the Application:
+Test the web application locally to ensure all features work correctly.
+Deploy the Application:
+Deploy the Flask application to a hosting service (e.g., Heroku).
+
+**__8. Ethical Considerations__**
+Decide on Displaying Cannabis Businesses:
+Make an informed decision on whether to include or exclude cannabis businesses in the visualization.
