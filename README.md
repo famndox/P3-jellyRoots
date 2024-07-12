@@ -72,6 +72,9 @@ References for any code used that is not your own
 (insert text here)
 
 
+Project Workflow
+-
+
 **__1. Project Initialization__**
 Create a New Repository:
 Create a new repository on GitHub named denver-viz.
