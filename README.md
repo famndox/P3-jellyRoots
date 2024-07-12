@@ -15,8 +15,7 @@ A visualization of restaurants and hotels within the metropolitan area of Denver
 
 Instructions on how to use and interact with the project
 -
-We've got our data read in from the Yelp API, and then Kris stored that data in an SQL database. Using Flask, we will read information on that database and store it on a webpage. Once it is read in and hosted, we will incorporate some JavaScript and HTML (using leaflet) to create the visualizations on that webpage.
-
+The project begins with retrieving data from the Yelp API, which is then systematically stored in an SQL database by Kris. Using Flask, we will access and read this stored data to dynamically generate and serve the relevant information on a webpage. Once the data is successfully hosted, we will leverage JavaScript and HTML, specifically using the Leaflet library, to develop interactive and visually engaging map-based visualizations. These visualizations will provide users with an intuitive and comprehensive overview of restaurants, hotels, and other points of interest in the Denver metropolitan area.
 
 At least one paragraph summarizing efforts for ethical considerations made in the project
 - 
