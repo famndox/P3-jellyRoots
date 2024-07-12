@@ -43,8 +43,10 @@ Here’s how you can implement the toggle feature for cannabis businesses:
 Flask Route
 --> app/routes.py
 
-HTML and JavaScript
+HTML
 --> templates/index.html
+
+JavaScript
 --> static/js/logic.js
 
 This implementation provides a way for users to toggle the visibility of cannabis businesses on the map, giving them control over their experience while ensuring ethical considerations are met.
