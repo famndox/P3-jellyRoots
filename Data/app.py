@@ -12,7 +12,7 @@ def connect_to_db():
         host="localhost",
         database="yelp_data",
         user="postgres",
-        password="'"
+        password="Wick3dChildr3n"
     )
     return conn
 
