@@ -38,6 +38,16 @@ def get_restaurants():
     conn.close()
     return jsonify(restaurants)
 
+@app.route('/green')
+def get_green():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM dispensaries;")
+    green = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return jsonify(green)
+
 # Home route
 @app.route('/')
 def index():
