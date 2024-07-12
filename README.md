@@ -68,7 +68,7 @@ References for the data source(s)
   
 References for any code used that is not your own
 -
-<a href='https://github.com/Leaflet/Leaflet'><333 Leaflet <333/</a>
+<a href='https://github.com/Leaflet/Leaflet'><333 Leaflet <333/</a><br>
 <a href='https://pngtree.com/freepng/natural-hills-and-mountains_4103445.html'>png image from pngtree.com/</a>
 
 
