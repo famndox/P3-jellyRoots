@@ -1,7 +1,7 @@
 // Modularity is King //
 var restaurantsPath = "http://127.0.0.1:5001/restaurants";
-var hotelsPath = "http://127.0.0.1:5001/hotels";
 var greenPath = "http://127.0.0.1:5001/hotels";
+var hotelsPath = "http://127.0.0.1:5001/green";
 
 // Create an array to hold the layer groups
 let layerGroups = [];
@@ -10,14 +10,14 @@ let layerGroups = [];
 d3.json(restaurantsPath).then(response => {
   let restaurantsLayer = createMarkers(response, "Restaurants");
   layerGroups.push(restaurantsLayer);
-  // Load hotels data after restaurants data is loaded
-  d3.json(hotelsPath).then(response => {
-    let hotelsLayer = createMarkers(response, "Hotels");
-    layerGroups.push(hotelsLayer);
-    // Load green data after hotels data is loaded
-    d3.json(greenPath).then(response => {
-      let greenLayer = createMarkers(response, "Green");
-      layerGroups.push(greenLayer);
+  // Load green data after restaurants data is loaded
+  d3.json(greenPath).then(response => {
+    let greenLayer = createMarkers(response, "Green");
+    layerGroups.push(greenLayer);
+    // Load hotels data after green data is loaded
+    d3.json(hotelsPath).then(response => {
+      let hotelsLayer = createMarkers(response, "Hotels");
+      layerGroups.push(hotelsLayer);
       // Create the map with all layers
       createMap(layerGroups);
     });
@@ -39,8 +39,8 @@ function createMap(layerGroups) {
     "The Earth": myTile
   }, {
     "Restaurants": layerGroups[0],
-    "Hotels": layerGroups[1],
-    "Green": layerGroups[2]
+    "Green": layerGroups[1],
+    "Hotels": layerGroups[2]
   }, {
     collapsed: false
   }).addTo(leaf);
@@ -65,22 +65,19 @@ function createMarkers(response, layerName) {
         opacity: 0.5,
         weight: 1
       };
-    } else if (layerName === "Hotels") {
-      markerOptions = {
-        color: 'blue', // blue markers for hotels
+    } else if (layerName === "Green") {
+      markerOptions = {  
+        color: 'green', // green color for green spaces
         opacity: 0.5,
         weight: 1
       };
-    } else if (layerName === "Green") {
-      markerOptions = {  
-        color: 'green' // green color for points
-
-      };
+    } else if (layerName === "Hotels") {
+      markerOptions = {};
     }
     
     // For each place, create a marker, and bind a popup with the place's location.
     let place_marker;
-    if (layerName === "Green") {
+    if (layerName === "Hotels") {
       place_marker = L.marker([lat, long], markerOptions)
         .bindPopup("<h3>" + place_name + "</h3><br>" + "Rating:" + rating );
     } else {
