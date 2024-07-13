@@ -38,6 +38,7 @@ Impact on Business Owners:
 
   
 Implementation
+
 To address these ethical considerations, we have implemented a feature that allows users to filter out cannabis/marijuana businesses from the search results. This ensures that users have the choice and flexibility to view the information that is most relevant and appropriate for them.
 
 
