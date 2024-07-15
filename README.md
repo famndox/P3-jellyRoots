@@ -21,6 +21,8 @@ To run this app, you'll need to first install psycopg like any other Python pack
 4. Then you may run the ***YelpSQL.sql*** in _"yelp_data"_ to populate the necessary tables columns
 5. Next run the ***yelp_data_retrieval.py*** script to populate the database
 6. Finally, run the ***app.py*** to re-JSON-ify the SQL database and *build* the ***index.html*** with it's supporting, *static*, ***style.css*** and ***logic.js***
+
+   
 ![App Screenshot](Images/app.png)
 
 ETHICAL CONSIDERATIONS
