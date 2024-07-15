@@ -20,7 +20,8 @@ To run this app, you'll need to first install psycopg like any other Python pack
 3. Open pgAdmin and create a new database named _"yelp_data"_ (all lowercase)(all defaults)
 4. Then you may run the ***YelpSQL.sql*** in _"yelp_data"_ to populate the necessary tables columns
 5. Next run the ***yelp_data_retrieval.py*** script to populate the database
-6. Finally, run the ***app.py*** to *build* the ***index.html*** and it's supporting ***style.css*** and ***logic.js*** in the *static* folder
+6. Finally, run the ***app.py*** to re-JSON-ify the SQL database and *build* the ***index.html*** with it's supporting, *static*, ***style.css*** and ***logic.js***
+![App Screenshot](Images/app.png)
 
 ETHICAL CONSIDERATIONS
 - 
@@ -59,3 +60,4 @@ jellyRoots
 <a href='https://github.com/famndox'>James B.</a><br>
 <a href='https://github.com/KrisMelton'>Kris M.</a><br>
 <a href='https://github.com/Trevor-Sandoval'>Trevor S.</a><br>
+<a href='https://docs.google.com/presentation/d/1_xz7i0G1DPjxy1GtI8R1DYicbaYTCayyHuQkljrD3Rw/edit?usp=sharing'>Presentation</a><br>
