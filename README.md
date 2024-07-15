@@ -54,7 +54,7 @@ REFERENCES
 
 <a href='https://github.com/Leaflet/Leaflet'><333 Leaflet <333</a><br>
 <a href='https://pngtree.com/freepng/natural-hills-and-mountains_4103445.html'>mountain range from pngtree.com</a><br>
-<a href='https://www.theleagueofmoveabletype.com/blackout'>_BLACKOUT_ from the *The Leauge of Moveable Type*</a><br>
+<a href='https://www.theleagueofmoveabletype.com/blackout'>**BLACKOUT** from the *The Leauge of Moveable Type*</a><br>
 
 
 jellyRoots
