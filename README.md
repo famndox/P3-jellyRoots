@@ -15,10 +15,10 @@ To run this app, you'll need to first install psycopg like any other Python pack
 
     $ pip install psycopg2
 
-1. Clone the repository
-2. Replace the apostrophe password "***'***" with your "pgAdminPassword" in the yelp_data_retrieval.py and app.py scripts
-3. Open pgAdmin and create a new database named "yelp_data" (all lowercase)(all defaults)
-4. Then you may run the ***YelpSQL.sql*** in "yelp_data" to populate the necessary tables columns
+1. Clone the repository <a href='https://github.com/famndox/P3-jellyRoots.git'>P3-jellyRoots.git</a><br>
+2. Replace the apostrophe password "***'***" with your "pgAdminPassword" in the ***yelp_data_retrieval.py*** and ***app.py*** scripts
+3. Open pgAdmin and create a new database named _"yelp_data"_ (all lowercase)(all defaults)
+4. Then you may run the ***YelpSQL.sql*** in _"yelp_data"_ to populate the necessary tables columns
 5. Next run the ***yelp_data_retrieval.py*** script to populate the database
 6. Finally, run the ***app.py*** to *build* the ***index.html*** and it's supporting ***style.css*** and ***logic.js*** in the *static* folder
 
@@ -40,71 +40,22 @@ Transparency and User Control:
 Impact on Business Owners:
 
 - Including cannabis businesses in the search results can provide them with visibility and support from users who are looking for these services. Conversely, giving users the option to exclude them also respects the privacy and comfort of users who prefer not to engage with these businesses.
-
   
 Implementation: To address these ethical considerations, we have implemented a feature that allows users to filter out cannabis/marijuana businesses from the search results. This ensures that users have the choice and flexibility to view the information that is most relevant and appropriate for them.
-
-
 
   
 REFERENCES
 -
 
-<a href='https://github.com/Leaflet/Leaflet'><333 Leaflet <333/</a><br>
-<a href='https://pngtree.com/freepng/natural-hills-and-mountains_4103445.html'>mountain range from pngtree.com/</a>
-<a href='https://www.theleagueofmoveabletype.com/blackout'>BLACKOUT from the *The Leauge of Moveable Type*/</a>
+<a href='https://github.com/Leaflet/Leaflet'><333 Leaflet <333</a><br>
+<a href='https://pngtree.com/freepng/natural-hills-and-mountains_4103445.html'>mountain range from pngtree.com</a><br>
+<a href='https://www.theleagueofmoveabletype.com/blackout'>BLACKOUT from the *The Leauge of Moveable Type*</a><br>
 
 
-Project Workflow
--
+jellyRoots
 
-**__1. Project Initialization__**:
-Create a New Repository:
-Create a new repository on GitHub named denver-viz.
-Clone the repository to your local machine.
-Set Up Project Directory:
-Create a directory structure for the project:
-
-**__2. Data Retrieval and Storage__**:
-Retrieve Data from Yelp API:
-Use the Yelp API to fetch data for restaurants and hotels in the Denver metropolitan area.
-Set Up SQL Database:
-Create an SQL database to store the data retrieved from the Yelp API.
-Define models for restaurants, hotels, and cannabis businesses using SQLAlchemy.
-
-**__3. Flask Application Development__**:
-Initialize Flask Application:
-Set up a Flask app in app/__init__.py.
-Configure the Flask app in config.py.
-Define routes for the web application in app/routes.py.
-Create database models in app/models.py.
-Populate the Database:
-Write a script to populate the database with data from the Yelp API.
-
-**__4. Frontend Development__**:
-Create HTML Template:
-Design an HTML template (index.html) to display the map and controls.
-Add CSS for Styling:
-Write CSS to style the map and controls in static/css/style.css.
-Implement JavaScript with Leaflet:
-Write JavaScript to initialize the map, add markers, and implement layer controls in static/js/logic.js.
-
-**__5. Integrate Frontend with Backend__**:
-Render Data on the Map:
-Use Flask to pass data from the database to the frontend.
-Render the map with markers for restaurants, hotels, and optionally cannabis businesses.
-
-**__6. Implement User Interactions__**:
-Add Controls for Filtering Data:
-Implement controls to toggle the visibility of cannabis businesses on the map.
-Update the map based on user interactions.
-
-**__7. Testing and Deployment__**:
-Test the Application:
-Test the web application locally to ensure all features work correctly.
-Deploy the Application:
-Deploy the Flask application to a hosting service (e.g., Heroku).
-
-**__8. Ethical Considerations__**
-Decide on Displaying Cannabis Businesses:
-Make an informed decision on whether to include or exclude cannabis businesses in the visualization.
+<a href='https://github.com/Alliekj'>Allie J.</a><br>
+<a href='https://github.com/KillerTwinkie7'>Grayson P.</a><br>
+<a href='https://github.com/famndox'>James B.</a><br>
+<a href='https://github.com/KrisMelton'>Kris M.</a><br>
+<a href='https://github.com/Trevor-Sandoval'>Trevor S.</a><br>
