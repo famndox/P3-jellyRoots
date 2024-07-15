@@ -44,7 +44,7 @@ def connect_to_db():
         host="localhost",
         database="yelp_data",
         user="postgres",
-        password="'" # Change this to your actual SQl password.
+        password="password" # Change this to your actual SQl password.
     )
     return conn
 
