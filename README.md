@@ -16,11 +16,11 @@ To run this app, you'll need to first install psycopg like any other Python pack
     $ pip install psycopg2
 
 1. Clone the repository <a href='https://github.com/famndox/P3-jellyRoots.git'>P3-jellyRoots.git</a><br>
-2. Replace the apostrophe password "***'***" with your "pgAdminPassword" in the ***yelp_data_retrieval.py*** and ***app.py*** scripts
-3. Open pgAdmin and create a new database named _"yelp_data"_ (all lowercase)(all defaults)
-4. Then you may run the ***YelpSQL.sql*** in _"yelp_data"_ to populate the necessary tables columns
-5. Next run the ***yelp_data_retrieval.py*** script to populate the database
-6. Finally, run the ***app.py*** to re-JSON-ify the SQL database and *build* the ***index.html*** with it's supporting, *static*, ***style.css*** and ***logic.js***
+2. Replace the "***password***" with your "pgAdminPassword" in the ***yelp_data_retrieval.py*** and ***app.py*** scripts
+4. Open pgAdmin and create a new database named _"yelp_data"_ (all lowercase)(all defaults)
+5. Then you may run the ***YelpSQL.sql*** in _"yelp_data"_ to populate the necessary tables columns
+6. Next run the ***yelp_data_retrieval.py*** script to populate the database
+7. Finally, run the ***app.py*** to re-JSON-ify the SQL database and *build* the ***index.html*** with it's supporting, *static*, ***style.css*** and ***logic.js***
 
    
 ![App Screenshot](Images/app.png)
