@@ -4,7 +4,7 @@
 
 OVERVIEW & PURPOSE
 - 
-We, the jellyRoots, built an app to assist in planning our upcoming vacation in Denver, CO. While we understand an API call could be performed directly on a webpage, we wanted to highlight a broader range of tools and assets that have been covered in our data vis class. Regardless, we're poor students so this API will be deprecated soon. 
+We, the jellyRoots, built an app to assist in planning our upcoming vacation in Denver, CO. While we understand an API call could be performed directly on a webpage, we wanted to highlight a broader range of tools and assets that have been covered in our data science class. Regardless, we're poor students so this API key will be deprecated soon. 
 
 The project begins with retrieving data from the Yelp API, which is then systematically stored in an SQL database. Using Flask, we will access and read this stored data to dynamically generate and serve the relevant information on a webpage. Once the data is successfully hosted, we will leverage JavaScript and HTML, specifically using the Leaflet library, to develop interactive and visually engaging map-based visualizations. These visualizations will provide users with an intuitive and comprehensive overview of restaurants, hotels, and other points of interest in the Denver metropolitan area.
 
