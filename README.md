@@ -1,23 +1,28 @@
 ![Header Image](Images/denver.png "Title Tile")
 =============================
 
-...but a taste of what's to come...
-
-You'll need to install psycopg like any other Python
-package, using ``pip`` to download it from PyPI_::
-
-    $ pip install psycopg2
 
 OVERVIEW & PURPOSE
 - 
-A visualization of restaurants and hotels within the metropolitan area of Denver, Colorado.
+We, the jellyRoots, built an app to assist in planning our upcoming vacation in Denver, CO. While we understand an API call could be performed directly on a webpage, we wanted to highlight a broader range of tools and assets that have been covered in our data vis class. Regardless, we're poor students so this API will be deprecated soon. 
 
-
-Instructions on how to use and interact with the project
--
 The project begins with retrieving data from the Yelp API, which is then systematically stored in an SQL database. Using Flask, we will access and read this stored data to dynamically generate and serve the relevant information on a webpage. Once the data is successfully hosted, we will leverage JavaScript and HTML, specifically using the Leaflet library, to develop interactive and visually engaging map-based visualizations. These visualizations will provide users with an intuitive and comprehensive overview of restaurants, hotels, and other points of interest in the Denver metropolitan area.
 
-At least one paragraph summarizing efforts for ethical considerations made in the project
+
+GRADER INSTRUCTIONS
+-
+To run this app, you'll need to first install psycopg like any other Python package, using ``pip`` to download it from PyPI_::
+
+    $ pip install psycopg2
+
+1. Clone the repository
+2. Replace the apostrophe password "***'***" with your "pgAdminPassword" in the yelp_data_retrieval.py and app.py scripts
+3. Open pgAdmin and create a new database named "yelp_data" (all lowercase)(all defaults)
+4. Then you may run the ***YelpSQL.sql*** in "yelp_data" to populate the necessary tables columns
+5. Next run the ***yelp_data_retrieval.py*** script to populate the database
+6. Finally, run the ***app.py*** to *build* the ***index.html*** and it's supporting ***style.css*** and ***logic.js*** in the *static* folder
+
+ETHICAL CONSIDERATIONS
 - 
 In the course of this project, we have made several ethical considerations, particularly regarding the inclusion of cannabis/marijuana businesses in our search results. Denver, Colorado, is known for its legal cannabis industry, and while some users may find value in this information, others may prefer it to be excluded. Therefore, we have ensured that our application provides an option to filter out cannabis/marijuana businesses based on user preference. This approach respects the diverse needs and values of our users, promoting inclusivity and respect for different viewpoints.
 
@@ -40,35 +45,14 @@ Impact on Business Owners:
 Implementation: To address these ethical considerations, we have implemented a feature that allows users to filter out cannabis/marijuana businesses from the search results. This ensures that users have the choice and flexibility to view the information that is most relevant and appropriate for them.
 
 
-Code Adjustments: Here’s how you can implement the toggle feature for cannabis businesses...
--- 
-Flask Route
---> app/routes.py
-
-HTML
---> templates/index.html
-
-JavaScript
---> static/js/logic.js
-
-This implementation provides a way for users to toggle the visibility of cannabis businesses on the map, giving them control over their experience while ensuring ethical considerations are met.
-
-
-
-
-
-
 
   
-References for the data source(s)
+REFERENCES
 -
-(insert text here)
 
-  
-References for any code used that is not your own
--
 <a href='https://github.com/Leaflet/Leaflet'><333 Leaflet <333/</a><br>
-<a href='https://pngtree.com/freepng/natural-hills-and-mountains_4103445.html'>png image from pngtree.com/</a>
+<a href='https://pngtree.com/freepng/natural-hills-and-mountains_4103445.html'>mountain range from pngtree.com/</a>
+<a href='https://www.theleagueofmoveabletype.com/blackout'>BLACKOUT from the *The Leauge of Moveable Type*/</a>
 
 
 Project Workflow
