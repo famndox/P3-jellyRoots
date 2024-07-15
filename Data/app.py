@@ -12,7 +12,7 @@ def connect_to_db():
         host="localhost",
         database="yelp_data",
         user="postgres",
-        password="'"
+        password="Fucksql"
     )
     return conn
 
@@ -66,4 +66,3 @@ def run_app():
 
 # Start Flask app in a separate thread
 threading.Thread(target=run_app).start()
-

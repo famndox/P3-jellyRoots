@@ -47,8 +47,27 @@ function createMap(layerGroups) {
 }
 
 function createMarkers(response, layerName) {
-  // Initialize an array to hold data for restaraunts and hotels.
+  // Initialize an array to hold data for restaurants and hotels.
   let place_data = [];
+
+  // Define custom icons for each layer
+  const icons = {
+    Restaurants: L.divIcon({
+      html: '<i class="fas fa-utensils custom-icon custom-icon-restaurant"></i>',
+      className: '',
+      iconSize: [30, 30]
+    }),
+    Green: L.divIcon({
+      html: '<i class="fas fa-leaf custom-icon custom-icon-green"></i>',
+      className: '',
+      iconSize: [30, 30]
+    }),
+    Hotels: L.divIcon({
+      html: '<i class="fas fa-bed custom-icon custom-icon-hotel"></i>',
+      className: '',
+      iconSize: [30, 30]
+    })
+  };
 
   // Loop through the features array.
   for (let index = 0; index < response.length; index++) {
@@ -56,34 +75,21 @@ function createMarkers(response, layerName) {
     let lat = response[index][10];
     let long = response[index][11];
     let rating = response[index][8];
-    
+
     // Define marker options based on layer name
-    let markerOptions;
-    if (layerName === "Restaurants") {
-      markerOptions = {
-        color: 'red', // red markers for restaurants
-        opacity: 0.5,
-        weight: 1
-      };
-    } else if (layerName === "Green") {
-      markerOptions = {  
-        color: 'green', // green color for green spaces
-        opacity: 0.5,
-        weight: 1
-      };
-    } else if (layerName === "Hotels") {
-      markerOptions = {};
-    }
-    
-    // For each place, create a marker, and bind a popup with the place's location.
-    let place_marker;
-    if (layerName === "Hotels") {
-      place_marker = L.marker([lat, long])
-        .bindPopup("<h3>" + place_name + "</h3><br>" + "Rating:" + rating );
-    } else {
-      place_marker = L.circleMarker([lat, long], markerOptions)
-        .bindPopup("<h3>" + place_name + "</h3><br>" + "Rating:" + rating );
-    }
+    let markerOptions = {
+      icon: icons[layerName]
+    };
+
+    // Create a marker, and bind a popup with the place's location.
+    let place_marker = L.marker([lat, long], markerOptions)
+      .bindPopup(`<h3>${place_name}</h3><br>Rating: ${rating}`)
+      .on('mouseover', function (e) {
+        this.openPopup();
+      })
+      .on('mouseout', function (e) {
+        this.closePopup();
+      });
 
     // Add the marker to the placeMarkers array.
     place_data.push(place_marker);

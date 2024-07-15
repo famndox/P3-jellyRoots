@@ -1,38 +1,69 @@
 body {
-  background-color: #36663e; /* dark green background */
+  background-color: #2F4F4F; /* dark green background */
   padding: 0;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-#map,
-body,
-html {
-  height: 100%;
+h1 {
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
 }
-
 
 ul {
-  color: rgb(0, 0, 0);
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+ul li a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #45a049;
 }
 
 .map-container {
-  display: grid;
-  place-items: center;
-  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* 80% of viewport height */
   width: 100vw; /* full viewport width */
-  background-color: #2F4F4F; /* dark green background */
 }
 
 #map {
-  width: 80%; /* adjust the width to your liking */
-  height: 80%; /* adjust the height to your liking */
-  margin: auto; /* center the map horizontally and vertically */
+  width: 90%; /* 90% of container width */
+  height: 100%; /* full container height */
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-h1 {
-  color: rgb(0, 0, 0);
-  text-align: center;
+.custom-icon {
+  font-size: 24px;
 }
+
+.custom-icon-restaurant {
+  color: red;
+}
+
+.custom-icon-green {
+  color: green;
+}
+
+.custom-icon-hotel {
+  color: blue;
+}
+
+
